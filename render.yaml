@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mybot4
+    env: python
+    repo: https://github.com/alialshughmumi/Mybot4
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: "7761916651:AAHZj3RfLrhEuupEZxqM3RZsyd5LZxu2uTo"
+      - key: OPENAI_API_KEY
+        value: "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"
